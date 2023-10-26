@@ -11,6 +11,7 @@ int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
 
     std::unique_ptr<QLabel>lb = std::make_unique<QLabel>("cwazy tic tac");
+    lb->resize(200, 100);
     lb->show();
     // my tic tac toe appliction
     TitleScreen mainScreen;
