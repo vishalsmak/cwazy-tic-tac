@@ -53,9 +53,9 @@ void TTTController::updateGameState(Cell &cell)
     // Updates the cell view.
     this->view_.updateCell(cell, currentPlayer_);
 
-#ifdef QT_DEBUG
+//#ifdef QT_DEBUG
     board_.printBoard();
-#endif
+//#endif
     // Update board state and declare state if its a final state.
     BoardState boardState = board_.evaluateBoard();
     if (BoardState::NoWinner != boardState)
