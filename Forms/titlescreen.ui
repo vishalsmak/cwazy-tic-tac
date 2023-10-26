@@ -79,7 +79,7 @@
          </font>
         </property>
         <property name="text">
-         <string>TIC TAC TOE</string>
+         <string>CWAZY TIC TAC</string>
         </property>
         <property name="textFormat">
          <enum>Qt::AutoText</enum>
@@ -92,7 +92,7 @@
       <item>
        <widget class="QLabel" name="label_6">
         <property name="text">
-         <string>A project by Abdelrahman Osama</string>
+         <string>LEARN CPP PROJECT</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -137,6 +137,36 @@
               <string>Board Size</string>
              </property>
             </widget>
+           </item>
+           <item row="0" column="1">
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="spacing">
+              <number>15</number>
+             </property>
+             <item>
+              <widget class="QSlider" name="boardSize">
+               <property name="minimum">
+                <number>3</number>
+               </property>
+               <property name="maximum">
+                <number>10</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="boardSizeValue">
+               <property name="text">
+                <string>3</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </item>
            <item row="1" column="0">
             <widget class="QLabel" name="label_2">
@@ -210,43 +240,6 @@
               <string>MiniMax Depth</string>
              </property>
             </widget>
-           </item>
-           <item row="4" column="0" colspan="2">
-            <widget class="QLabel" name="label_7">
-             <property name="text">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#c10000;&quot;&gt;* Disclaimer: Increasing depth will affect performance &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <layout class="QHBoxLayout" name="horizontalLayout_5">
-             <property name="spacing">
-              <number>15</number>
-             </property>
-             <item>
-              <widget class="QSlider" name="boardSize">
-               <property name="minimum">
-                <number>3</number>
-               </property>
-               <property name="maximum">
-                <number>10</number>
-               </property>
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLabel" name="boardSizeValue">
-               <property name="text">
-                <string>3</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-              </widget>
-             </item>
-            </layout>
            </item>
            <item row="3" column="1">
             <layout class="QHBoxLayout" name="horizontalLayout_6">
