@@ -25,15 +25,18 @@ vector<Cell> TicTacToeGame::buildCellButtons(size_t boardSize)
     for (size_t row = 0; row < boardSize; ++row) {
         for (size_t col = 0; col < boardSize; ++col) {
             // Add buttons to gridLayout
-            QPushButton *btn = new QPushButton();
+//            QPushButton *btn = new QPushButton();
+
+            std::shared_ptr<QPushButton> btn (new QPushButton());
+
             btn->setProperty("cell", true);
-            ui->gridBoard->addWidget(btn,
+            ui->gridBoard->addWidget(btn.get(),
                                      static_cast<int>(row),
                                      static_cast<int>(col),
                                      defaults::GUI_CELL_ROW_SPAN,
                                      defaults::GUI_CELL_COLUMN_SPAN);
             // Reference to cells
-            cells.emplace_back(btn, row, col);
+            cells.emplace_back(btn.get(), row, col);
         }
     }
     // Adjusts window size to fit children widgets added dynamically
